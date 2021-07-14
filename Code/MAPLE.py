@@ -38,7 +38,7 @@ class MAPLE:
         elif fe_type == "gbrt":
             fe = GradientBoostingRegressor(n_estimators = n_estimators, min_samples_leaf = min_samples_leaf, max_features = max_features, max_depth = None)
         else:
-            print("Unknown FE type ", fe)
+            print("Unknown FE type ", fe_type)
             import sys
             sys.exit(0)
         fe.fit(X_train, MR_train)
